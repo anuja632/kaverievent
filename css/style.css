@@ -1,0 +1,745 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://ganaeventplanners.in/wp-content/uploads/2025/02/photorealistic-wedding-venue-with-intricate-decor-ornaments-1-scaled.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  border-radius: 5px;;
+}
+
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.cta-button {
+  display: inline-block;
+  background:#04052A; /* Kaveri Green */
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.kaveri-intro-section {
+  padding: 60px 20px;
+  /* background: #f4f6ff; */
+  font-family: "Poppins", sans-serif;
+}
+
+.kaveri-intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.kaveri-intro-images {
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.kaveri-intro-images .image {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.large {
+  grid-column: span 2;
+  height: 200px;
+}
+
+.small {
+  height: 100px;
+}
+
+.kaveri-intro-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.kaveri-intro-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+    font-family: 'Alex Brush', cursive;
+
+  color: #000;
+}
+
+.kaveri-intro-content .highlight {
+  color: #4B0082; /* Deep Indigo */
+    font-family: 'Alex Brush', cursive;
+
+}
+
+
+.kaveri-intro-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.kaveri-intro-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #444;
+  text-align: justify;
+}
+.services-section .highlight {
+  color: #000;
+    font-family: 'Alex Brush', cursive;
+}
+.services-section h1{
+text-align: center;
+
+}
+.services-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #333;text-align: center;
+
+}
+.hover-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Text overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 1, 64, 0.85);
+  color: white;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  color: #f5b800;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Alex Brush', cursive;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+/* Container Padding & Layout */
+.why-us-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+/* Section Title */
+.heading-one .heading-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #04052A;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+}
+
+.why-us-section .highlight{
+    font-family: 'Alex Brush', cursive;
+
+}
+/* Heading Paragraph */
+.heading-one + p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.col-xl-4.col-sm-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical alignment */
+  align-items: center;     /* Horizontal alignment */
+  text-align: center;      /* Optional: center text */
+  height: 100%;            /* Ensure it fills available height */
+}
+
+
+/* Box Style */
+.why-heder-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-top: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+
+/* Hover Effect */
+.why-heder-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Title Inside Box */
+.why-us-content .why-heder-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #04052A;
+  margin-bottom: 1rem;
+      font-family: 'Alex Brush', cursive;
+
+}
+
+.why-us-content .why-heder-title span {
+  color:#04052A;
+      font-family: 'Alex Brush', cursive;
+
+}
+
+/* Paragraph Text Inside Box */
+.why-heder-box p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Responsive Utility */
+@media (max-width: 768px) {
+  .why-heder-box {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .why-us-content .why-heder-title {
+    font-size: 1.2rem;
+  }
+}
+
+.why-us-content{
+    display: flex
+;
+    justify-content: space-between;
+}
+.testimonial-box {
+  position: relative;
+  background: #fff;
+  padding: 2rem 1.5rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  /* border-image: linear-gradient(to right, #ec008c, #fc6767) 1; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  margin-top: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-6px);
+}
+.testi-section h2{
+          font-family: 'Alex Brush', cursive;
+          color:white;
+
+} 
+.testi-section p{
+text-align: center;
+
+}
+
+.testi-section {
+  background-image: url("./../image/test.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.testi-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0;
+}
+
+.testi-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.testi-image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 3px solid #ec008c; */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+.testi-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color:#04052A;
+  margin-top: 1.5rem;
+  
+}
+
+.role {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+.quote-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
+
+.top-quote {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.bottom-quote {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+
+.slider-item {
+  padding: 0 10px;
+}
+
+.testi-slider .slider-item {
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transform: scale(0.95);
+  /* opacity: 0.7; */
+}
+
+.testi-slider .slick-center .slider-item {
+  transform: scale(1.05); /* highlight center slide */
+  opacity: 1;
+  z-index: 2;
+}
+ .logo-slider-container {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .logo-slider-track {
+    display: flex;
+    width: calc(250px * 14); /* number of logos * logo width */
+    animation: slide-left 20s linear infinite;
+  }
+
+  .logo-slider-track img {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    object-fit: contain;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7)); /* half the logos width */
+    }
+  }
+    .reverse-logo-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .reverse-logo-slider-track {
+    display: flex;
+    width: calc(250px * 14); /* total width: 2 sets of 7 logos */
+    animation: slide-right 20s linear infinite;
+  }
+
+  .reverse-logo-slider-track img {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    object-fit: contain;
+  }
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 30px;
+  background-image: url("https://img.freepik.com/free-photo/high-angle-wedding-planner-working_23-2150328518.jpg");
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.contact-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+    .contact-left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-left h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+                font-family: 'Alex Brush', cursive;
+
+    }
+
+    .contact-left h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .stat-item p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      color: #000;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      background: #f2f2f2;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      background-color: #04052A;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+
+
+.footer {
+   color: white;
+  padding: 30px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+    background-color: #04052A;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+
+}
+
+.footer-contact h3,
+.footer-services h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-contact p,
+.footer-contact a {
+  margin: 8px 0;
+  color:white;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+ color: white;}
+
+.footer-contact a i.icon,
+.footer-contact p i.icon {
+  margin-right: 8px;
+  color: white;
+}
+
+.footer-services ul {
+  list-style: none;
+  padding-left: 0;
+  column-count: 2;
+  column-gap: 30px;
+ color: white;
+  line-height: 1.7;
+}
+
+.footer-services ul li {
+  margin-bottom: 6px;
+}
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .stats {
+        justify-content: center;
+      }
+    }
+  @keyframes slide-right {
+    0% {
+      transform: translateX(calc(-250px * 7)); /* start fully shifted left */
+    }
+    100% {
+      transform: translateX(0); /* scroll right back to original */
+    }
+  }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px 40px;
+    background-position: center top;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  text-align: justify;
+
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .logo-wrapper {
+    padding: 6px;
+  }
+    .kaveri-intro-container {
+    flex-direction: column;
+  }
+  .kaveri-intro-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
