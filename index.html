@@ -440,7 +440,7 @@ We don’t just plan events—we craft unforgettable experiences. Leveraging the
   </div>
 </section>
 
-<div class="container">
+<div class="container-fluid">
 
     <div class="logo-slider-container">
       <div class="logo-slider-track">
@@ -687,6 +687,17 @@ $('.testi-slider').slick({
 
 <script>
   const toTop = document.getElementById("to_top");
+    const hero = document.querySelector(".hero");
+
+  window.addEventListener("scroll", () => {
+    const heroBottom = hero.getBoundingClientRect().bottom;
+
+    if (heroBottom < 0) {
+      toTop.classList.add("show");
+    } else {
+      toTop.classList.remove("show");
+    }
+  });
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -701,6 +712,7 @@ $('.testi-slider').slick({
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
+
 
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
