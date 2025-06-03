@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  <title>Kaveri Events</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Add this in your <head> section to load Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,124 +18,136 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
-
-  <title>Kaveri Events</title>
-  <link rel="stylesheet" href="css/style.css" />
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-overlay"></div>
+<header class="hero" data-aos="fade-up">
+  <div class="hero-overlay">
 
-    <div class="navbar">
+  </div>
 
-      <img src="image/logo.jpg" alt="Kaveri Logo" class="logo"/>
-     </div>
+  <div class="navbar" data-aos="fade-down">
+    <img src="image/logo.jpg" alt="Kaveri Logo" class="logo"/>
+  </div>
 
-    <div class="hero-content">
-<h1>
-  <span style="color:#db31a9; font-weight:bold;">#1</span> 
-  <span style="color:#ffffff;">Event Organisers</span><br>
-  <span style="color:#ffffff;">in</span> 
-  <span style="color:#db31a9; font-weight:bold;">Bangalore</span>
-</h1>
+  <div class="hero-content" data-aos="fade-left">
+    <h1>
+      <span style="color:#db31a9; font-weight:bold;">#1</span> 
+      <span style="color:#ffffff;">Event Organisers</span><br>
+      <span style="color:#ffffff;">in</span> 
+      <span style="color:#db31a9; font-weight:bold;">Bangalore</span>
+    </h1>
 
-      <p>
-At Kaveri Events, we blend creativity, expertise, and precision to transform your vision into an unforgettable experience. As Bangalore’s trusted event management company, we deliver seamless, personalized services—so you can enjoy every moment while we handle the details.      </p>
-      <a href="#" class="cta-button">Contact Us</a>
-    </div>
-  </header>
+    <p data-aos="fade-right" data-aos-delay="600">
+      At Kaveri Events, we blend creativity, expertise, and precision to transform your vision into an unforgettable experience. As Bangalore’s trusted event management company, we deliver seamless, personalized services—so you can enjoy every moment while we handle the details.
+    </p>
+
+    <a href="#" class="cta-button">Contact Us</a>
+  </div>
+</header>
+
   <section class="kaveri-intro-section">
   <div class="kaveri-intro-container">
-    <div class="kaveri-intro-images">
-      <img src="image/event.jpg" alt="Event 1" class="image large">
-      <img src="image/conference.jpg" alt="Event 2" class="image small">
-      <img src="image/photography.jpg" alt="Event 3" class="image small">
-      <img src="image/wedding.jpg" alt="Event 4" class="image large">
+        <div class="kaveri-intro-images">
+    <img src="image/event.jpg" alt="Event 1" class="image large" data-aos="fade-up">
+    <img src="image/conference.jpg" alt="Event 2" class="image small" data-aos="fade-up" data-aos-delay="100">
+    <img src="image/photography.jpg" alt="Event 3" class="image small" data-aos="fade-up" data-aos-delay="200">
+    <img src="image/wedding.jpg" alt="Event 4" class="image large" data-aos="fade-up" data-aos-delay="300">
+
     </div>
-    <div class="kaveri-intro-content">
-      <h1>Welcome to <span class="highlight">Kaveri Event Management</span></h1>
-      <h3>Transforming Moments into Memories</h3>
-      <p>
-        At Kaveri Event Management, we turn your vision into unforgettable experiences. Our expert team delivers immersive environments and flawless execution tailored to your event's unique goals.
-      </p>
-      <p>
-        From elegant weddings to corporate conferences and cultural festivals, we specialize in creating magical experiences with perfect planning, creative design, and meticulous coordination.
-      </p>
-      <p>
-        With over 100 successful events and thousands of delighted guests, we promise excellence, elegance, and emotion in every celebration we manage.
-      </p>
-      <a href="#" class="cta-button">Get In Touch</a>
-    </div>
+        <div class="kaveri-intro-content">
+        <h1 data-aos="fade-up">
+            Welcome to <span class="highlight">Kaveri Event Management</span>
+        </h1>
+
+        <h3 data-aos="fade-up">Transforming Moments into Memories</h3>
+
+        <p data-aos="fade-left">
+            At Kaveri Event Management, we turn your vision into unforgettable experiences. Our expert team delivers immersive environments and flawless execution tailored to your event's unique goals.
+        </p>
+
+        <p data-aos="fade-left">
+            From elegant weddings to corporate conferences and cultural festivals, we specialize in creating magical experiences with perfect planning, creative design, and meticulous coordination.
+        </p>
+
+        <p data-aos="fade-left">
+            With over 100 successful events and thousands of delighted guests, we promise excellence, elegance, and emotion in every celebration we manage.
+        </p>
+
+        <a href="#" class="cta-button" data-aos="zoom-in">Get In Touch</a>
+        </div>
+
   </div>
 </section>
 <section class=" container services-section">
     <h3>Our Service</h3>
        <h1><span class="highlight">Explore Event</span></h1>
 
-<section class="hover-cards">
-  <div class="card" >
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmMgzaSy0WiIjgqRH2LBTlVh8100IVpvVkQ&s" alt="Corporate Events">
-    <div class="overlay">
-      <h3>Corporate Events</h3>
-      <p>Kaveri Events excels in standout corporate events, offering seamless planning and memorable experiences tailored to your vision.</p>
-    </div>
-  </div>
+        <section class="hover-cards">
+        <div class="card"data-aos="flip-up" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmMgzaSy0WiIjgqRH2LBTlVh8100IVpvVkQ&s" alt="Corporate Events">
+            <div class="overlay">
+            <h3>Corporate Events</h3>
+            <p>Kaveri Events excels in standout corporate events, offering seamless planning and memorable experiences tailored to your vision.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="image/conferencehall.jpg" alt="Conference">
-    <div class="overlay">
-      <h3>Conference</h3>
-      <p>Kaveri Events delivers exceptional conferences with meticulous planning and cutting-edge technology, ensuring engagement.</p>
-    </div>
-  </div>
+        <div class="card" data-aos="flip-up">
+            <img src="image/conferencehall.jpg" alt="Conference">
+            <div class="overlay">
+            <h3>Conference</h3>
+            <p>Kaveri Events delivers exceptional conferences with meticulous planning and cutting-edge technology, ensuring engagement.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="https://images.squarespace-cdn.com/content/v1/60da576b8b440e12699c9263/78eab2e9-2730-496b-b96a-caa28144de88/ovation+2.jpg" alt="Cultural Events">
-    <div class="overlay">
-      <h3>Cultural Events</h3>
-      <p>We celebrate cultural richness with immersive events crafted through creative vision, precision, and passion.</p>
-    </div>
-  </div>
+        <div class="card" data-aos="flip-up">
+            <img src="https://images.squarespace-cdn.com/content/v1/60da576b8b440e12699c9263/78eab2e9-2730-496b-b96a-caa28144de88/ovation+2.jpg" alt="Cultural Events">
+            <div class="overlay">
+            <h3>Cultural Events</h3>
+            <p>We celebrate cultural richness with immersive events crafted through creative vision, precision, and passion.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="http://dsgroups.org/img/gallery/nakshatra2018/img3.jpg" alt="Celebrity Management">
-    <div class="overlay">
-      <h3>Celebrity Management</h3>
-      <p>We offer seamless coordination and access to stars to elevate your event with prestige and star power.</p>
-    </div>
-  </div>
+        <div class="card" data-aos="flip-up">
+            <img src="http://dsgroups.org/img/gallery/nakshatra2018/img3.jpg" alt="Celebrity Management">
+            <div class="overlay">
+            <h3>Celebrity Management</h3>
+            <p>We offer seamless coordination and access to stars to elevate your event with prestige and star power.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="image/wedding.jpg" alt="Wedding Events">
-    <div class="overlay">
-      <h3>Wedding Events</h3>
-      <p>We blend creativity and meticulous planning to craft unforgettable weddings tailored to your dreams.</p>
-    </div>
-  </div>
+        <div class="card" data-aos="flip-up">
+            <img src="image/wedding.jpg" alt="Wedding Events">
+            <div class="overlay">
+            <h3>Wedding Events</h3>
+            <p>We blend creativity and meticulous planning to craft unforgettable weddings tailored to your dreams.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="image/eventi.webp" alt="Equipment Rental">
-    <div class="overlay">
-      <h3>Equipment Rental</h3>
-      <p>Reliable tech and tools to elevate your event with professional-grade sound, lighting, and stage gear.</p>
-    </div>
-  </div>
+        <div class="card" data-aos="flip-up">
+            <img src="image/eventi.webp" alt="Equipment Rental">
+            <div class="overlay">
+            <h3>Equipment Rental</h3>
+            <p>Reliable tech and tools to elevate your event with professional-grade sound, lighting, and stage gear.</p>
+            </div>
+        </div>
 
-  <div class="card">
-    <img src="image/photograph.webp" alt="Photography & Videography">
-    <div class="overlay">
-      <h3>Photography & Videography</h3>
-      <p>Capture the essence of your event with our expert photography and videography services.</p>
-    </div>
-  </div>
-    <div class="card">
-    <img src="image/virtual.jpg" alt="Virtual Events">
-    <div class="overlay">
-      <h3>Virtual Events</h3>
-      <p>Kaveri Events redefines connection through cutting-edge virtual experiences—from engaging webinars to immersive digital conferences that transcend physical limits.</p>
-    </div>
-  </div>
-</section>
+        <div class="card" data-aos="flip-up">
+            <img src="image/photograph.webp" alt="Photography & Videography">
+            <div class="overlay">
+            <h3>Photography & Videography</h3>
+            <p>Capture the essence of your event with our expert photography and videography services.</p>
+            </div>
+        </div>
+            <div class="card" data-aos="flip-up">
+            <img src="image/virtual.jpg" alt="Virtual Events">
+            <div class="overlay">
+            <h3>Virtual Events</h3>
+            <p>Kaveri Events redefines connection through cutting-edge virtual experiences—from engaging webinars to immersive digital conferences that transcend physical limits.</p>
+            </div>
+        </div>
+        </section>
 </section>
 <section class="common-space why-us-section">
 
@@ -153,7 +171,7 @@ At Kaveri Events, we blend creativity, expertise, and precision to transform you
                         </h3>
                         
 
-                       <svg version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
+                       <svg  class="pulse" version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
 <linearGradient id="grad--linear-1">
   <stop offset="0%" stop-color="#04052A" class="stop-1"></stop>   
   <stop offset="50%" stop-color="#04052A" class="stop-2"></stop>
@@ -187,7 +205,7 @@ Whether it's a corporate gathering, a lavish wedding, or an intimate celebration
                             Expert  <span>Team</span>
                         </h3>
                      
-                       <svg version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
+                       <svg class="pulse"  version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
   <linearGradient id="grad--linear-1">
     <stop offset="0%" stop-color="#3F2E88" class="stop-1"></stop>   
     <stop offset="50%" stop-color="#d72638" class="stop-2"></stop>
@@ -214,7 +232,7 @@ Our experienced team of planners, designers, and coordinators brings a wealth of
                             Client-Centric <span>Philosophy</span> 
                         </h3>
                       
-                        <svg version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
+                        <svg class="pulse"  version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
   <linearGradient id="grad--linear-1">
     <stop offset="0%" stop-color="#3F2E88" class="stop-1"></stop>   
     <stop offset="50%" stop-color="#d72638" class="stop-2"></stop>
@@ -244,7 +262,7 @@ At Kaveri Events, our clients are our top priority. We tailor each event to your
                             Proven <span> Track Record</span>
                         </h3>
                        
-                        <svg version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
+                        <svg class="pulse"  version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
   <linearGradient id="grad--linear-1">
     <stop offset="0%" stop-color="#3F2E88" class="stop-1"></stop>   
     <stop offset="50%" stop-color="#d72638" class="stop-2"></stop>
@@ -280,7 +298,7 @@ With a portfolio spanning successful events across various industries and occasi
                             Innovative <span> Approach</span>
                         </h3>
                      
-<svg version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
+<svg  class="pulse" version="1.1" viewBox="0 0  150 150" width="64" height="64" fill="url(#grad--linear-1)">
   <linearGradient id="grad--linear-1">
     <stop offset="0%" stop-color="#3F2E88" class="stop-1"></stop>   
     <stop offset="50%" stop-color="#d72638" class="stop-2"></stop>
@@ -419,46 +437,47 @@ We don’t just plan events—we craft unforgettable experiences. Leveraging the
     </div>
   </div>
 </section>
-<div class="conatiner">
+
+<div class="container">
 
     <div class="logo-slider-container">
       <div class="logo-slider-track">
         <!-- 7 logos -->
-        <img src="https://via.placeholder.com/250x100?text=Logo+1" alt="Logo 1" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+2" alt="Logo 2" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+3" alt="Logo 3" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+4" alt="Logo 4" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+5" alt="Logo 5" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+6" alt="Logo 6" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+7" alt="Logo 7" />
+        <img src="image/conference3.jpg" alt="Logo 1" />
+        <img src="image/coporate1.jpeg" alt="Logo 2" />
+        <img src="image/wed1.jpg" alt="Logo 3" />
+        <img src="image/event1.jpg" alt="Logo 4" />
+        <img src="image/cultural1.jpg" alt="Logo 5" />
+        <img src="image/phot2.webp" alt="Logo 6" />
+        <img src="image/wed2.jpg" alt="Logo 7" />
         <!-- repeat logos for infinite scroll -->
-        <img src="https://via.placeholder.com/250x100?text=Logo+1" alt="Logo 1" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+2" alt="Logo 2" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+3" alt="Logo 3" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+4" alt="Logo 4" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+5" alt="Logo 5" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+6" alt="Logo 6" />
-        <img src="https://via.placeholder.com/250x100?text=Logo+7" alt="Logo 7" />
+        <img src="image/conference3.jpg" alt="Logo 1" />
+        <img src="image/coporate1.jpeg" alt="Logo 2" />
+        <img src="image/wed1.jpg" alt="Logo 3" />
+        <img src="image/event1.jpg" alt="Logo 4" />
+        <img src="image/cultural1.jpg" alt="Logo 5" />
+        <img src="image/phot2.webp" alt="Logo 6" />
+        <img src="image/wed2.jpg" alt="Logo 7" />
       </div>
     </div>
     <div class="reverse-logo-slider-wrapper">
   <div class="reverse-logo-slider-track">
     <!-- 7 logos -->
-    <img src="https://via.placeholder.com/250x100?text=Logo+1" alt="Logo 1" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+2" alt="Logo 2" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+3" alt="Logo 3" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+4" alt="Logo 4" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+5" alt="Logo 5" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+6" alt="Logo 6" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+7" alt="Logo 7" />
+    <img src="image/conference4.jpg" alt="Logo 1" />
+    <img src="image/coporate1.jpeg" alt="Logo 2" />
+    <img src="image/wed4.jpg" alt="Logo 3" />
+    <img src="image/event.jpg" alt="Logo 4" />
+    <img src="image/cultural1.jpg" alt="Logo 5" />
+    <img src="image/photograph.webp" alt="Logo 6" />
+    <img src="image/wed3.jpg" alt="Logo 7" />
     <!-- repeat logos -->
-    <img src="https://via.placeholder.com/250x100?text=Logo+1" alt="Logo 1" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+2" alt="Logo 2" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+3" alt="Logo 3" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+4" alt="Logo 4" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+5" alt="Logo 5" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+6" alt="Logo 6" />
-    <img src="https://via.placeholder.com/250x100?text=Logo+7" alt="Logo 7" />
+    <img src="image/conference4.jpg" alt="Logo 1" />
+    <img src="image/coporate1.jpeg" alt="Logo 2" />
+    <img src="image/wed4.jpg" alt="Logo 3" />
+    <img src="image/event1.jpg" alt="Logo 4" />
+    <img src="image/envent.jpg" alt="Logo 5" />
+    <img src="image/photograph.webp" alt="Logo 6" />
+    <img src="image/wed3.jpg" alt="Logo 7" />
   </div>
 </div>
 </div>
@@ -503,10 +522,11 @@ We don’t just plan events—we craft unforgettable experiences. Leveraging the
     </form>
   </div>
 </section>
-<!-- Add this in your <head> section to load Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<!-- Include Font Awesome in <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<a href="#" class="to_top show" id="to_top">
+        <i class="fa fa-arrow-up" ></i>
+    </a>
+
+
 
 <footer class="footer">
   <div class="footer-container">
@@ -529,10 +549,12 @@ We don’t just plan events—we craft unforgettable experiences. Leveraging the
           www.kaverievents.com
         </a>
       </p>
-      <p>
-        <i class="fas fa-phone icon"></i>
-        8618738226 | 9843054000
-      </p>
+<p>
+  <i class="fas fa-phone icon"></i>
+  <a href="tel:8618738226">8618738226</a> |
+  <a href="tel:9843054000">9843054000</a>
+</p>
+
     </div>
 
     <div class="footer-services">
@@ -552,6 +574,79 @@ We don’t just plan events—we craft unforgettable experiences. Leveraging the
 </footer>
 
 
+<div class="popup-overlay" id="popupOverlay">
+  <form class="popup-form" 
+        action="https://formsubmit.co/kaverievents1999@gmail.com" 
+        method="POST" 
+        enctype="multipart/form-data">
+        
+    <!-- CLOSE BUTTON TOP RIGHT -->
+    <button type="button" class="close-btn" id="closePopupBtn">&times;</button>
+
+<div class="popup-image" aria-hidden="true">
+  <img src="https://img.freepik.com/free-photo/yellow-lights-shine-around-white-bower-darkness_1304-3769.jpg?ga=GA1.1.486923664.1748706937&semt=ais_items_boosted&w=740" alt="Popup Visual" />
+</div>
+
+    <div class="popup-content">
+      <h2>Event Inquiry Form</h2>
+
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New Event Inquiry Submission" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://kaverievents.com/thank-you.html" />
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name*" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="10-digit phone number*" pattern="[0-9]{10}" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email*" required />
+
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option>Corporate Events</option>
+        <option>Conferences</option>
+        <option>Cultural Events</option>
+        <option>Celebrity Management</option>
+        <option>Wedding Events</option>
+        <option>Equipment Rental</option>
+        <option>Photography & Videography</option>
+        <option>Virtual Events</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  const popupOverlay = document.getElementById('popupOverlay');
+  const closeBtn = document.getElementById('closePopupBtn');
+
+  // Auto-show popup after 2 seconds
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      popupOverlay.style.display = 'flex';
+    }, 2000);
+  });
+
+  // Close logic
+  closeBtn.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+  });
+
+  popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) {
+      popupOverlay.style.display = 'none';
+    }
+  });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -590,7 +685,31 @@ $('.testi-slider').slick({
   });
 </script>
 
+<script>
+  const toTop = document.getElementById("to_top");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      toTop.classList.add("show");
+    } else {
+      toTop.classList.remove("show");
+    }
+  });
+
+  toTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 500,  // animation duration in ms
+    once: false       // whether animation should happen only once - while scrolling down
+  });
+</script>
 
 
 </body>
